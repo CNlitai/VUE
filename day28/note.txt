@@ -94,3 +94,70 @@ css
       给子级元素设置绝对定位
       left right top bottom 设置为0
       margin：auto；
+
+
+    给父级元素设置
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+盒子模型
+  内容区
+  padding border margin 
+  box-sizing
+    border-box
+
+
+    content-box
+      w3c盒子
+      内容区宽度 width
+      盒子的宽度：width + padding-left + padding-right + border-left + border-right
+
+css选择器
+  标签选择器
+  通配符选择器
+
+
+
+
+  伪类选择器
+  伪元素选择器
+  属性选择器
+
+
+清除浮动
+  #清除浮动
+布局
+  左右两列 200px，中间列自适应
+
+
+定位
+  相对定位 没有脱离文档流
+  绝对定位 脱离文档流 如果父元素没有定位属性，相对于浏览器定位
+  固定定位 脱离文档流 相对于浏览器定位
+
+
+  定位是完全脱离文档流
+  浮动不完全
+
+
+js
+  基本数据类型
+  string number boolean undefined null
+
+  运算符
+
+  循环语句
+  
+  条件判断语句
+
+  引用数据类型
+    函数对象数组
+
+
+
+
+
+vue
+  基于mvvm模式的渐进式框架
+  轻量级 易上手
