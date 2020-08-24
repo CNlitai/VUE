@@ -161,3 +161,23 @@ js
 vue
   基于mvvm模式的渐进式框架
   轻量级 易上手
+
+  不再对dom进行操作
+  脱离dom操作
+  model  数据
+  view   视图
+  vm viewModel  做dom监听
+
+  mvc
+  model  数据层
+  view   视图层
+  controller  控制器
+
+  引入方式
+    1.cdn
+
+    2.npm
+      npm install vue 需要依赖node环境
+
+    3.vue-cli脚手架 
+      企业级模块化
