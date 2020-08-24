@@ -7,13 +7,11 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
 </head>
 <body>
-  <div class="container">
+  <div class="container" @click="say();">
 <!-- 此处的div是容器 -->
 {{msg}}
   </div>
-  <div class="container">
-    {{arr}}
-  </div>
+
   <script>
     // vm 是vue的一个实例
     let vm = new Vue({
@@ -27,6 +25,12 @@
           name: 'terry',age:13
         }
       ]
+      },
+
+      methods: {
+        say() {
+          console.log('this is a method')
+        }
       }
 
     })
