@@ -1,0 +1,96 @@
+vue生态
+  webpack
+  sass/less css预处理
+  vue-element-admin
+  webapp
+
+
+H5API
+  stroage
+
+
+es6
+  let
+  const 
+  箭头函数
+  set map
+  primise;
+  genarator
+  async
+
+html 
+  行内元素
+    共享一行不可以设置宽高
+
+  块元素
+    独占一行，可以设置宽高
+
+  功能性元素
+    input type
+          data
+          number
+
+  在样式表丢失的情况下
+  浏览器解析效率比较高
+  兼容性 IE8 会把这些标签解析为行内元素
+
+
+image标签上title属性与alt属性的区别是什么
+  alt 当图片加载不了的时候 出现的解释文字
+  title 鼠标悬浮上出现的文字
+
+css
+  css引入方式
+    内嵌式
+
+    行内样式
+    外部样式
+      link
+        html标签的语言
+        加载html的同时去加载css
+      @import
+        属于css
+        先加载html完成之后再加载css
+
+
+外边距合并问题
+  针对垂直方向上
+    父子级
+      给父级元素加边框
+      给父级元素加overflow
+      给父级或子级加浮动
+      给父级或子级加绝对定位
+      给父级或子级加inline-block
+    兄弟级
+      如果都是正数，会合并取值较大的那一个
+      如果都是负数，会合并取绝对值较大的那一个
+
+      如果一正一负，会累加不合并
+
+显示和隐藏
+  display
+    none 隐藏
+    block 显示
+  隐藏之后不占据屏幕空间
+  visibility 
+    hidden
+    visible
+  隐藏之后占据屏幕空间
+  opcity
+    0
+    1
+  隐藏之后占据屏幕空间
+
+元素的水平垂直居中
+  行内元素
+    text-align="center"
+    line-height:父元素同高
+  块元素
+    1.水平 
+      margin：0 auto；
+
+    2.垂直
+      给父级元素设置相对定位
+      给子级元素设置绝对定位
+      left right top bottom 设置为0
+      margin：auto；
