@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 左右两列 200px，中间列自适应 -->
+  <style>
+    .outer {
+      background-color:grey;
+      overflow: hidden;
+      
+    }
+
+    .left {
+      width: 200px;
+      height: 200px;
+      background-color: gold;
+      float: left;
+    }
+
+    .center {
+      /* background-color: green; */
+      /* height: 200px; */
+    }
+
+    .right {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+  </div>
+</body>
+</html>
