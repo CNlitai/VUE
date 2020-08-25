@@ -27,3 +27,47 @@ updated
 beforeDestroy
   销毁之前，可以使用实例对象
 
+
+
+v-text
+
+v-html
+  对标签进行解析
+
+v-once
+  只在第一次的时候有效
+
+v-bind
+  绑定属性
+  简写： +属性名
+  ：style
+  ：title
+
+js表达式
+
+  {{num + 1}}
+
+v-on绑定事件
+
+v-if 
+  如果不满足条件 那么节点在页面中不进行渲染，
+  在dom树中没有当前的dom节点
+
+v-show
+  如果不满足条件，这个节点在页面中不渲染。
+  但会出现在dom树中
+
+v-for
+  遍历数组
+  item：数组项
+  index：数组的索引
+  key:代表唯一 
+    <div v-for="(item,index) in arr": key=""></div>
+  遍历对象
+    value：当前对象的属性值
+    name
+
+
+
+
+
