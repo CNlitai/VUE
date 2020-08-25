@@ -9,21 +9,29 @@
 <body>
   <div class="main">
     <!-- 双向数据绑定 -->
-    <input type="text" v-model="name">
+    <!-- <input type="text" v-model="name"> -->
+    <!-- {{msg}} -->
+    <!-- <div v-on:click="say">点我</div> -->
+    <div @click="say">点我</div>
   </div>
   <script>
     let vm = new Vue({
-      el:'main',
       //生命周期 尽量不用箭头函数  影响this指向
-      beforeCreate: function() {
-        console.log("beforeCreate")
-      },
-      create: function() {
-        console.log("create")
-      },
+      // beforeCreate: function() {
+      //   console.log("beforeCreate")
+      // },
+      // create: function() {
+      //   console.log("create")
+      // },
 
       data: {
+        num:10,
         msg: 'hello'
+      },
+      methods: {
+        say() {
+          console.log("say")
+        }
       }
     })
   </script>
