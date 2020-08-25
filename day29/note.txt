@@ -1,0 +1,29 @@
+1.vue
+  mvvm
+    
+
+beforeCreate（只执行一次）
+  初始化data中的属性
+
+
+create
+  初始化结束，实例创建完毕，可以访问到数据和方法
+
+beforeMount
+  挂载之前，判断当前的实例应用与那个模版，此时的数据还不能够给该模版使用
+
+mounted
+  挂载完成，把数据应用于模版
+
+
+beforeUpdate（可能执行多次）
+  虚拟dom更新之前
+
+
+updated
+  更新完成之后
+
+
+beforeDestroy
+  销毁之前，可以使用实例对象
+
