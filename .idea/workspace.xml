@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="868d3453-245f-4c60-bf53-df85144cd707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day30/1-demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day29/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day29/note.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day30/2-监听属性.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day30/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day30/note.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -67,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598401524583</updated>
       <workItem from="1598401526177" duration="447000" />
-      <workItem from="1598406871121" duration="120000" />
+      <workItem from="1598406871121" duration="745000" />
     </task>
     <servers />
   </component>
@@ -85,6 +86,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="209" y="23" width="1231" height="877" key="SettingsEditor" timestamp="1598406990146">
