@@ -1,0 +1,95 @@
+生命周期
+	beforeCreate
+		初始化之前，不可以使用实例对象
+	created
+		初始化完成，可以使用方法和数据
+	beforeMount
+		挂载前，判断当前是否有模版
+	mounted
+		挂载后，容器就可以使用数据和方法
+	beforeUpdate
+		更新前
+			可以多次执行
+	updated
+		更新后
+			可以多次执行
+	beforeDestory
+		销毁前
+	Destroy
+		销毁后
+
+指令
+	v-bind
+		绑定属性
+			v-bind：class=‘’
+			：class=''
+			:title
+			:url
+				:url='"http://+url"'
+	v-html
+		可以识别标签
+	v-text
+		会把标签当作文本解析
+	v-if
+		条件判断，如果v-if的值是false 当前节点不会加载到dom树（页面中）去
+		可以进行简单的逻辑运算
+	v-else
+		只有当v-if不满足条件的时候，才会执行v-else
+	v-else-if
+		条件判断
+	v-show
+		条件判断，如果值为false 节点不会显示在页面中，会加载到dom树中
+		display:none;
+	v-for
+		循环遍历
+		v-for的取值
+			数组：v-for='(item, index)' in arr
+				item 值  index  索引
+			对象：v-for='(value, name, index) in obj'
+	v-on
+		绑定事件
+			v-on:事件类型
+			简写：@click
+		修饰符
+			@click.stop
+				阻止冒泡
+			@click.once
+
+属性
+	:class
+		类
+		子主题 2
+	:style
+		行内样式
+		必须使用驼峰命名法
+
+表单
+	双向数据绑定
+	<form v-model='userform'>
+		userform是对象
+	<div class="app">
+    {{username}}
+    用户名：<input type="text" v-model='username'><br>
+    性别：
+    <input type="radio" value="nan" v-model='gender'>male 
+    <input type="radio" value="nv" v-model='gender'>famale 
+
+    <br>
+    爱好：
+    <input type="checkbox" value="1" v-model='hobby'>single
+    <input type="checkbox" value="2" v-model='hobby'>dancd
+    <input type="checkbox" value="3" v-model='hobby'>basket
+  </div>
+
+  <script>
+    new Vue({
+      el: '.app',
+      data: {
+        username:'',
+        gender:'',
+        hobby:[],
+      }
+    })
+  </script>
+
+
