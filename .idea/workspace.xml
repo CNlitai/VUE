@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="868d3453-245f-4c60-bf53-df85144cd707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day30/2-监听属性.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day30/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day30/note.txt" afterDir="false" />
-    </list>
+    <list default="true" id="868d3453-245f-4c60-bf53-df85144cd707" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +52,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598401524583</updated>
       <workItem from="1598401526177" duration="447000" />
-      <workItem from="1598406871121" duration="745000" />
+      <workItem from="1598406871121" duration="929000" />
     </task>
     <servers />
   </component>
