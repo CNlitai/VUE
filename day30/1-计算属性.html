@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div>原值：{{msg}}</div>
+    <div>反转：{{msg.split('').reverse().join('')}}</div>
+    <div>计算属性：{{reverseMsg}}</div>
+    <div>方法：{{reverseMsg1()}}</div>
+
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        msg: 'Hello'
+      },
+      created() {
+        setInterval(() => {
+          this.msg = this.msg + 1;
+        }, 1000);
+      },
+
+      //计算属性
+      computed: {
+        reverseMsg: function() {
+          return this.msg.split('').reverse().join('')
+          console.log('计算属性执行了');
+        }
+      },
+      methods: {
+        reverseMsg1: function() {
+          return this.msg.split('').reverse().join('')
+          console.log('方法执行了');
+        }
+      },
+    })
+  </script>
+</body>
+</html>
