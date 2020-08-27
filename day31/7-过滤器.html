@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+
+</head>
+<body>
+        <div id="app">
+            {{time | dataParse}}
+        </div>
+        <script>
+            // 过滤器 全局注册
+            Vue.filter('dataParse',function(dataString){
+                if(dataString){
+                    let date = new Date(dataString);
+                    let Y = date.getFullYear() + '-';
+                    let M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+                    let D = (date.getDate()< 10 ? '0'+date.getDate() : date.getDate())+' ';
+                    
+                    return Y+M+D;  
+                }else{
+                    return '';
+                }
+            })
+            new Vue({
+                el:'#app',
+                data:{
+                    time:1596963345429
+                }
+            })
+        </script>
+</body>
+</html>
