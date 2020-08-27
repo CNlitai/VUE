@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+
+</head>
+<body>
+        <div id="app">
+            <briup :level='1'>你好,我是子组件</briup>
+            <briup :level='2'>你好,我是子组件</briup>
+            <briup :level='3'>你好,我是子组件</briup>
+        </div>
+        <script>
+
+Vue.component('briup', { 
+	render: function (createElement) { 
+	  return createElement( // 该方法用于创建虚拟节点 vnode
+	    'h' + this.level, // 标签名称
+	    this.$slots.default // 子节点数组
+ 	)}, 
+	props: { level: { type: Number, required: true } } 
+})
+
+                new Vue({
+                el:'#app',
+                data:{
+                    
+                }
+            })
+        </script>
+</body>
+</html>
