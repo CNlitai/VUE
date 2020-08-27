@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+        {{age}}
+        <!-- {{username}} -->
+    </div>
+    <script>
+        // 混入对象的声明
+        let minxin = {
+            data(){
+                return {
+                    msg:'hello',
+                    username:'tom'
+                }
+            },
+
+            // created:function(){
+            //     // this.test()
+            // },
+            methods:{
+                test(){
+                    console.log('混入对象的方法')
+                }
+            }
+        }
+        // 
+        // var Component = Vue.extend({
+        //     mixins: [minxin]
+        // })
+        // new Component
+
+        let vm = new Vue({
+            el:'#app',
+            mixins:[minxin],
+            data:{
+                msg:'nice',
+                age:12
+            },
+            created(){
+                console.log(this.$data)
+            },
+            methods:{
+                test(){
+                    console.log('组件的方法')
+                }
+            }
+        })
+        vm.test()
+    </script>
+</body>
+</html>
