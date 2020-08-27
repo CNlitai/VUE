@@ -1,0 +1,129 @@
+input type='text' v-modle='test'
+
+data : {
+  msg :''
+  form:{
+    username
+  }
+}
+watch: {
+  msg:function(newMsg, oldMsg) {
+    this.test
+  }
+}
+
+深度监听,form对象中有任意一个属性发生改变，那么就触发监听
+form :{
+  handler: function(new,old) {
+
+  },deep:true
+
+}，
+“form:username”:function()
+methods : {
+  test(){
+    console.log(this.msg)
+  }
+}
+
+
+子
+let user = {
+  template:`
+
+  `
+}
+父
+let userinfo = {
+  component:{
+    'user' = user,
+  }
+}
+计算属性
+	只有当数据改变的时候，才会重新执行
+	把计算后的数据，当作属性来用
+	computed:
+		方法：每次调用都会执行
+
+监听属性
+	watch
+		监听数据的变化，从而触发某个方法
+	input type='text' v-modle='test'
+
+data : {
+  msg :''
+}
+watch: {
+  msg:function(newMsg, oldMsg) {
+    this.test
+  }
+}
+methods : {
+  test(){
+    console.log(this.msg)
+  }
+}
+		input type='text' v-modle='test'
+
+data : {
+  msg :''
+  form:{
+    username
+  }
+}
+watch: {
+  msg:function(newMsg, oldMsg) {
+    this.test
+  }
+}
+
+深度监听,form对象中有任意一个属性发生改变，那么就触发监听
+form :{
+  handler: function(new,old) {
+
+  },deep:true
+
+}，
+“form:username”:function()
+methods : {
+  test(){
+    console.log(this.msg)
+  }
+}
+		深度监听
+
+组件
+	全局注册
+		Vue.component('组件名',{
+		   template:``,  容器
+		组件的data必须是函数
+	局部注册
+		子
+let user = {
+  template:`
+    
+  `
+}
+父
+let userinfo = {
+  component:{
+    'user' = user,
+  }
+}
+	template
+		里面的内容不会显示在页面中
+		子主题 2
+	父子组件传值
+
+------------------------
+普通插槽
+  允许在调用子组件的时候给子组件传递模版
+  Vue.component('briup',{
+      template:`
+        <div>
+          <slot></slot>
+          nmsl</div>
+      `
+    })
+
+  在调用当前组件的时候，使用template传参
