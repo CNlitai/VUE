@@ -1,0 +1,80 @@
+vue router
+  路由的改变可以动态加载组件，达到开发单页面的
+
+引入方式
+  1.cdn 引入链接
+
+  2.npm安装
+    npm install vue-router -save
+
+    import vueRouter from 'vue-router'
+    //导入使用
+
+    Vue.use(vueRouter)
+
+es6
+导出
+  export default
+
+导入
+  import xx from 'xx'
+
+commentJs
+  export.module = 
+
+
+导入
+  let path = require('path') npm install
+
+
+
+1.创建逐渐
+
+2.创建路由对象
+  let router = new Vue Router({
+    routes: [
+      psth:'/', //当前组件的路径
+      component:user
+    ]
+  })
+
+3.注册路由对象
+
+  new Vue({
+    el: '',
+    data: {
+
+    },
+    router,
+  })
+
+  4.在模版中使用
+    <router-link to="/user">用户管理</router-link>  //to表示要跳转的路径
+
+    加载组件内容
+    <router-view></router-view>
+
+
+5.动态组件
+两个路由使用同一个组件
+组件只会创建一次，切换路由，不会重新创建，会复用
+当前动态传id，存储在this.$route
+    let router = new Vue Router({
+        routes: [
+          psth:'/user/:id', //当前组件的路径
+          component:user
+        ]
+      })
+
+
+监听路由切换的方式
+  1.watch
+    watch:{
+      $route(to,from){
+        to:目标路由地址
+        from:当前路由地址
+      }
+    }
+
+  2.导航守卫
+    beforeRouteUpdate()
