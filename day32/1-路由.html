@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.4.3/vue-router.min.js"></script>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+
+    }
+    html, body, #app {
+      width: 100%;
+      height: 100%;
+    }
+    .header{
+      width: 100%;
+      height: 70px;
+      background-color: salmon;
+    }
+    .left {
+      width: 100px;
+      height: calc(100% - 70px);
+      background-color:green;
+      float: left;
+    }
+    .right {
+      width: calc(100% - 100px);
+      height: calc(100% - 70px);
+      background-color:pink;
+      float: left;
+    }
+    .left>div {
+      width: 100%;
+      height: 30px;
+      border-bottom: 1px solid #ffffff;
+      text-align: center;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+
+    </div>
+    <div class="left">
+      <div>
+        <router-link to="/user">用户管理</router-link>
+      </div>
+      <div>
+        <router-link to="/article">文章管理</router-link>
+      </div>
+    </div>
+    <div class="right">
+      <router-view></router-view>
+    </div>
+  </div>
+  <script>
+    let user = {
+      template:`
+        <div>用户管理模块</div>
+      `
+    }
+    let article = {
+      template:`
+        <div>文章管理模块
+          
+          </div>
+      `
+    }
+    
+    //路由对象
+    let router = new VueRouter({
+      routes: [{
+        path: '/user',
+        component: user
+      },{
+        path: '/article',
+        component: article
+      }]
+    })
+    new Vue({
+      el: '#app',
+      
+      router,//注册路由
+      data: {
+
+      },
+    })
+  </script>
+</body>
+</html>
