@@ -78,3 +78,7 @@ commentJs
 
   2.导航守卫
     beforeRouteUpdate()
+
+
+编程式导航
+  
