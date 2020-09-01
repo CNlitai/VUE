@@ -1,0 +1,8 @@
+路由类型
+  history
+  hash url后拼接#
+
+启动项目
+  npm run serve
+  npm run start
+  npm run dev
