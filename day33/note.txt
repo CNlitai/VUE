@@ -6,3 +6,20 @@
   npm run serve
   npm run start
   npm run dev
+
+
+axios
+  单纯的ajax框架
+  体积小，比较符合mvvm开发模式
+  默认数据格式类型json
+  对请求的返回结果二次封装
+  axios中集成了Promise  
+
+  get
+    json格式 
+
+  ajax
+    get
+      表单格式 / 查询字符串
+
+vuex
