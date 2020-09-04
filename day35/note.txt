@@ -1,0 +1,12 @@
+webpack
+less/sass
+
+1.vuex
+  状态管理机
+  把公共的变量放到公共的平台
+  user
+  article
+
+webpack
+  静态模块打包工具
+  把浏览器不支持的语言进行转换（sass、typescript）
